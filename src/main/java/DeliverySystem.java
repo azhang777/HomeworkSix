@@ -55,7 +55,8 @@ public final class DeliverySystem {
         System.out.println("ITEM RECEIPT\n");
         System.out.println("Product     QTY     Price     Miles     Total");
         System.out.println("------      ---     -----     -----     -----");
-        System.out.println(product.getName() + "        " + product.getQuantityOrder() + "       $" + product.getPrice() + "     " + miles + "      $" + getTotalPrice());
+        System.out.printf("%-12s %-6d $%4.2f     %4.2f     $%4.2f", product.getName(), product.getQuantityOrder(), product.getPrice(), miles, getTotalPrice());
+        //System.out.println(product.getName() + "        " + product.getQuantityOrder() + "       $" + product.getPrice() + "     " + miles + "      $" + getTotalPrice());
         System.out.println("\nTHANK YOU. COME AGAIN");
     }
     public static DeliverySystem getInstance() {

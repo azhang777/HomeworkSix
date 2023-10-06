@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("What would like you to order? (ENTER NUMBER)\n1. Rice\n2. Taco\n3. Burger");
+        System.out.println("What would like you to order? (ENTER NUMBER)\n1. Burger\n2. Taco\n3. Rice");
         Product productInput = null;
         int option = scanner.nextInt();
         System.out.println("How many would you like? (ENTER NUMBER)");
